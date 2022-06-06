@@ -227,6 +227,9 @@ nav a, a {
   background-color: #a78ba4;
 }
 
+.border-bottom-none {
+  border-bottom: none!important;
+}
 /* Typography */
 
 .mini-title {
@@ -482,7 +485,7 @@ nav a, a {
 }
 
 /* cover Thumbnail section */
-.coverThumbnails-section {
+.coverThumbnail-section {
   position: relative;
   margin-top: 60px;
   top: 0;
@@ -491,4 +494,21 @@ nav a, a {
   height: 100%;
   background-color: var(--color-primary)!important;
   width: 100%;
+}
+
+.thumbnail-img {  
+  background-image: url(https://assets.website-files.com/5bd86c52b7abc5114b2ed43c/5bd8e067cf26d350857abf3a_7.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 675px;
+  width: 44%;
+  min-width: 540px;
+  /* adjust space */
+  margin-left:65px;
+}
+
+.thumbnail-text {
+  position: absolute;
+  right: 260px;
 }
