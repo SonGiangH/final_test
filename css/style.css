@@ -1,0 +1,494 @@
+/* Select 4 styles of font Cormorant Garamond */
+body {
+    font-family: 'Cormorant Garamond', sans-serif!important;
+    font-size: 24px;
+    line-height:30px;
+    height:100%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-heading: #b99bb6;
+    --color-body: #5f4d5d;
+    --color-background: #b08ead;
+    --color-primary: #c9adc6;
+    --color-secondary: #d6bbd3;  
+}
+
+/*  Set up container - row - column */
+.container {
+    width: 1240px;
+    margin-left: auto;
+    margin-right: auto;                    /* thuoc tinh auto la set size phu thuoc phan tu Child element */
+
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+
+    margin-left: -5px;
+    margin-right: -5px;                      /*  Do container padding left, right with 5px               */
+}
+
+/* Column settings */
+.col-1 {
+    width: calc(100% / 12);
+  }
+  
+  .col-2 {
+    width: calc(2 * ( 100% / 12 ));
+  }
+  
+  .col-3 {
+    width: calc(3 * ( 100% / 12 ));
+  }
+  
+  .col-4 {
+    width: calc(4 * ( 100% / 12 ));
+  }
+  
+  .col-5 {
+    width: calc(5 * ( 100% / 12 ));
+  }
+  
+  .col-6 {
+    width: calc(6 * ( 100% / 12 ));
+  }
+  
+  .col-7 {
+    width: calc(7 * ( 100% / 12 ));
+  }
+  
+  .col-8 {
+    width: calc(8 * ( 100% / 12 ));
+  }
+  
+  .col-9 {
+    width: calc(9 * ( 100% / 12 ));
+  }
+  
+  .col-10 {
+    width: calc(10 * ( 100% / 12 ));
+  }
+  
+  .col-11 {
+    width: calc(11 * ( 100% / 12 ));
+  }
+  
+  .col-12 {
+    width: 100%;
+  }
+  
+  .offset-1 {
+    margin-left: calc(100% / 12);
+  }
+  
+  .offset-2 {
+    margin-left: calc(2 * ( 100% / 12 ));
+  }
+
+  /* Setting column width with padding and margin */
+
+  [class*="col-"] {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 10px;
+  }
+
+
+  /* utility functions */
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left  {
+    text-align: left;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.j-end {
+    justify-content: flex-end;
+}
+
+.j-start {
+    justify-content: flex-start;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.a-end {
+    align-items: flex-end;
+}
+
+.d-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+/* Position */
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+/* Specific elements */
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.color-heading {
+    color: var(--color-heading);
+    font-weight: 500;
+}
+
+/* Utilities-padding and margin */
+
+.padding-top-130 {
+  padding-top: 130px;
+}
+
+.mbot-25 {
+  margin-bottom: 25px;
+}
+
+.margin-bottom-40 {
+  margin-bottom:40px;
+}
+
+.margin-left-40 {
+  margin-left: 40px;
+}
+
+.margin-left-25 {
+  margin-left: -25px;
+}
+
+.mtop-30 {
+  margin-top: 30px;
+}
+
+.mright-90 {
+  margin-right: 90px;
+}
+
+nav li,
+nav a, a {
+    list-style-type: none;
+    list-style-position: inside;
+    text-decoration: none;
+    color: white;
+}
+
+.color-primary {
+  background-color: var(--color-background);
+}
+
+.color-secondary {
+  background-color: #a78ba4;
+}
+
+/* Typography */
+
+.mini-title {
+    margin-bottom: 10px;
+    font-family: Roboto, sans-serif;
+    color: var(--color-background);
+    font-size: 13.5px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.title-link {
+    transition: opacity 200ms ease;
+    font-family: 'Cormorant Garamond', sans-serif;
+    color: #fff;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.mini-link {
+  font-family: 'Cormorant Garamond', sans-serif;
+  font-size: 19px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.collection-name {
+  font-family: 'Cormorant Garamond', sans-serif;
+  font-size: 45px;
+  line-height:55px;
+  margin-bottom: 10px;
+}
+
+.btn-buy {
+  border-bottom: 2px solid white;
+  padding-bottom: 8px;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.font-13 {
+  font: size 13.5px;
+}
+
+/* header */
+.nav {
+  padding:30px;
+}
+
+.nav-item {
+  margin-right: 43px;
+}
+
+/* Slider - section */
+/* set parent container height 100% thi moi dung dc % cho child element */
+.slider-section {
+    width: 100%;
+    position: relative;
+}
+
+.slider-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height:56%;
+    background-color: var(--color-primary)!important;
+}
+
+.slider-bottom {
+    position: absolute;    
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height:44%;
+    background-color: var(--color-secondary)!important;
+}
+
+.slider-main-box {
+  position: relative;
+  width:100%;
+  max-width: 1215px;
+  /* center the box */
+  margin-left: auto;      
+  margin-right: auto;
+  padding: 72px 0;
+}
+
+.slider-img {
+  width: 70%;
+  height: 675px;
+  background-image: url(https://assets.website-files.com/5bd86c52b7abc5114b2ed43c/5bd90a8aef82dc5918248baa_cushion.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* adjust space */
+  margin-left:65px;
+}
+
+.slider {
+  width: 35%;
+  height: 450px;  
+  background-color: var(--color-background);
+  /* center to middle of box due to align-items-center cua div cha */
+  /* set space for padding */
+  padding-left: 40px;
+}
+
+.slider-text {
+  position: absolute;
+  right: 0;
+}
+
+.control-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin-top: 14px;
+  margin-bottom:0px; 
+  font-size: 28px;
+}
+
+.icon-left {
+  background-color: #a78ba4;
+}
+
+.icon-right {
+  background-color: var(--color-background);
+}
+
+.slider-control {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* Summary section */
+.summary-statement {
+  font-family: 'Cormorant Garamond', sans-serif;
+  color: var(--color-body);
+  font-size: 26px;
+  line-height: 38px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  text-transform: none;
+}
+
+.summary-text {
+  width:65%;  
+  max-width: 788px;
+  text-align: center;
+  margin-top: 84px;
+}
+
+.btn-learnMore {
+  font-family: Roboto, sans-serif;
+  display: inline-block;
+  border: 2px solid var(--color-primary);
+  border-radius:25px;
+  color: var(--color-primary);
+  font-size: 11px;
+  line-height: 15px;
+  font-weight: 700;
+  height: 45px;
+  padding-left: 30px;
+  padding-right: 28px;
+  padding-top:13px;
+  text-transform: uppercase;
+  /* push down the space to the below block */
+  margin-bottom: 50px;
+}
+
+.block {
+  width: 365px;
+  background-color: var(--color-background);
+  margin-right: 28px;
+}
+
+.block-bottom {
+  padding-top:27px;
+  padding-left: 25px;
+}
+
+/* About Section */
+
+.about-img {
+  background-image: url(
+    https://assets.website-files.com/5bd86c52b7abc5114b2ed43c/5bd892e61cab6c8d61313a06_1.png);
+  height:670px;
+  width: 536px;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about-section {
+  position: relative;
+  margin-top:60px;
+  top: 0;
+  left: 0;
+  right: 0;
+  height:100%;
+  background-color: var(--color-primary)!important;
+  width: 100%;
+}
+
+.about-box {
+  position: relative;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  padding-left: 50px;
+  max-width: 1265px;
+  /* can chinh center middle */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-text {
+  width:440px;
+  position: absolute;
+  left: 0;
+}
+
+/* Intro section */
+.description-img img {
+  width:603px;
+  height: 412px;
+  border: 18px solid var(--color-primary);
+}
+
+.description-text {
+  max-width: 607px;
+}
+
+.description p {
+  letter-spacing: 0.5px;
+}
+
+.description {
+  margin-top:75px;
+  padding-bottom: 40px;
+  max-width: 1265px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid var(--color-background);
+}
+
+/* cover Thumbnail section */
+.coverThumbnails-section {
+  position: relative;
+  margin-top: 60px;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-color: var(--color-primary)!important;
+  width: 100%;
+}
