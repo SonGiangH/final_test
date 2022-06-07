@@ -18,6 +18,8 @@ body {
     --color-background: #b08ead;
     --color-primary: #c9adc6;
     --color-secondary: #d6bbd3;  
+    --color-accent: #b0b0b0;
+    --gutter: 26px;
 }
 
 /*  Set up container - row - column */
@@ -26,16 +28,24 @@ body {
     margin-left: auto;
     margin-right: auto;                    /* thuoc tinh auto la set size phu thuoc phan tu Child element */
 
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: calc(var(--gutter) / 2);
+    padding-right: calc(var(--gutter) / 2);
 }
 
 .row {
     display: flex;
     flex-direction: row;
 
-    margin-left: -5px;
-    margin-right: -5px;                      /*  Do container padding left, right with 5px               */
+    margin-left: calc(var(--gutter) / -2);
+    margin-right: calc(var(--gutter) / -2);                      /*  Do container padding left, right with 5px               */
+}
+
+ /* Setting column width with padding and margin */
+
+ [class*="col-"] {
+  padding-left: calc(var(--gutter) / 2);
+  padding-right: calc(var(--gutter) / 2);
+  margin-top: 10px;
 }
 
 /* Column settings */
@@ -93,14 +103,6 @@ body {
   
   .offset-2 {
     margin-left: calc(2 * ( 100% / 12 ));
-  }
-
-  /* Setting column width with padding and margin */
-
-  [class*="col-"] {
-    padding-left: 5px;
-    padding-right: 5px;
-    margin-top: 10px;
   }
 
 
@@ -227,6 +229,10 @@ nav a, a {
   background-color: #a78ba4;
 }
 
+.color-accent {
+  color: var(--color-accent);
+}
+
 .border-bottom-none {
   border-bottom: none!important;
 }
@@ -273,6 +279,10 @@ nav a, a {
 
 .color-white {
   color: #fff;
+}
+
+.color-body {
+  color: var(--color-body);
 }
 
 .font-13 {
@@ -420,6 +430,15 @@ nav a, a {
   padding-left: 25px;
 }
 
+.thumbnail {
+  overflow: hidden;
+}
+
+.thumbnail:hover img {
+    transform: scale(1.1);
+    transition: 200ms ease-in-out;
+}
+
 /* About Section */
 
 .about-img {
@@ -488,6 +507,7 @@ nav a, a {
 .coverThumbnail-section {
   position: relative;
   margin-top: 60px;
+  margin-bottom: 55px;
   top: 0;
   left: 0;
   right: 0;
@@ -511,4 +531,36 @@ nav a, a {
 .thumbnail-text {
   position: absolute;
   right: 260px;
+}
+
+/* product section */
+.products-wrapper .col-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  margin-bottom: 53px;
+}
+
+.product-link {
+  overflow: hidden;
+}
+
+
+.col-4:hover img {
+  transform: scale(1.1);
+  transition: ease-in-out 200ms;
+}
+
+.price {
+  font-family: Roboto, sans-serif;
+  color: #b0b0b0;
+  font-size: 16px;
+  line-height: 17.5px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.products-wrapper p {
+  margin-top: 10px;
 }
