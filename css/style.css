@@ -674,3 +674,40 @@ input:focus, textarea:focus {
   font-size: 20px;
   font-style: italic;
 }
+
+/* Badge section */
+.badge-section {
+  position: relative;
+  margin-top: 60px;
+  margin-bottom: 55px;
+  padding-bottom: 50px;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-color: var(--color-primary)!important;
+  color: #fff;
+  width: 100%;
+}
+
+.badge-container {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  height: 94px;
+  width: 94px;
+  background-color: var(--color-background);
+  border-radius: 50%;
+}
+
+.badge-container i {
+  color:white;
+}
+
+.slogan {
+  width: 100%;
+  font-size: 22px;
+  font-weight: 700;
+}
+
