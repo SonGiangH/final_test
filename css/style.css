@@ -658,6 +658,7 @@ input:focus, textarea:focus {
   width: 35%;
   height:60px;
   padding-left: 25px;
+  padding-right: 100px
 }
 
 .subscribe-box {
