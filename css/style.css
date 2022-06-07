@@ -240,7 +240,7 @@ nav a, a {
 
 .mini-title {
     margin-bottom: 10px;
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: var(--color-background);
     font-size: 13.5px;
     font-weight: 700;
@@ -402,7 +402,7 @@ nav a, a {
 }
 
 .btn-learnMore {
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
   display: inline-block;
   border: 2px solid var(--color-primary);
   border-radius:25px;
@@ -553,7 +553,7 @@ nav a, a {
 }
 
 .price {
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #b0b0b0;
   font-size: 16px;
   line-height: 17.5px;
@@ -564,3 +564,70 @@ nav a, a {
 .products-wrapper p {
   margin-top: 10px;
 }
+
+/* contact section */
+.contact-section {
+  position: relative;
+  margin-top: 60px;
+  margin-bottom: 55px;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-color: var(--color-primary)!important;
+  color: #fff;
+  width: 100%;
+}
+
+::placeholder { /* change color of placeholder */
+  color: #fff;
+ }
+
+.form-group * {
+  background-color: transparent;
+}
+
+.form-control {
+  font-family: 'Roboto', sans-serif;
+  color:#fff!important;
+  border: 1px solid #fff;
+  font-size: 16px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 50px;
+  width: 100%;
+}
+
+input:focus, textarea:focus {
+  border-color: #3898EC;
+  outline: 0;
+}
+
+.textarea-height {
+  height: 100px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  height: 50px;
+  width: 25%;
+  cursor: pointer;  
+}
+
+.btn-submit {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.btn:hover {
+  background-color: #fff;
+}
+
+.btn:hover .btn-submit {
+  color: var(--color-background);
+}
+
