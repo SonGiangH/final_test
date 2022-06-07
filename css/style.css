@@ -193,6 +193,10 @@ img {
   margin-bottom: 25px;
 }
 
+.mbot-70 {
+  margin-bottom: 70px;
+}
+
 .margin-bottom-40 {
   margin-bottom:40px;
 }
@@ -211,6 +215,10 @@ img {
 
 .mright-90 {
   margin-right: 90px;
+}
+
+.mleft-24 {
+  margin-left: 24px;
 }
 
 nav li,
@@ -631,3 +639,37 @@ input:focus, textarea:focus {
   color: var(--color-background);
 }
 
+/* Newsletter section */
+.btn-subscribe {
+  font-size: 20px;
+  background-color: var(--color-background);
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.input-name, 
+.input-email {
+  border-style: solid none solid solid;
+  border-color: var(--color-background);
+  border-width: 1px;
+  width: 35%;
+  height:60px;
+  padding-left: 25px;
+}
+
+.subscribe-box {
+  width: 35%;
+  height: 60px;
+  border: 1px solid var(--color-background);
+}
+
+.input-name::placeholder,
+.input-email::placeholder {
+  color: var(--color-background);
+  font-family: 'Cormorant Garamond', sans-serif;
+  font-size: 20px;
+  font-style: italic;
+}
