@@ -217,6 +217,10 @@ img {
   margin-right: 90px;
 }
 
+.mright-53 {
+  margin-right: 53px;
+}
+
 .mleft-24 {
   margin-left: 24px;
 }
@@ -678,8 +682,6 @@ input:focus, textarea:focus {
 /* Badge section */
 .badge-section {
   position: relative;
-  margin-top: 60px;
-  margin-bottom: 55px;
   padding-bottom: 50px;
   top: 0;
   left: 0;
@@ -711,3 +713,39 @@ input:focus, textarea:focus {
   font-weight: 700;
 }
 
+/* Footer */
+
+.footer {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-background)!important;
+  color: #fff;  
+}
+
+.footer-link {
+  font-size: 21px;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 37px;
+  height: 37px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: var(--color-secondary);
+}
+
+.sharing-icon {
+  margin-left: auto;
+}
+
+.advertise-container {
+  font-size:15px;
+  font-weight: 600;
+}
